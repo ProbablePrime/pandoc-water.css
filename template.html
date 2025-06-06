@@ -1,0 +1,27 @@
+<!doctype html>
+<html $if(lang)$ lang="$lang$" $endif$>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta name="generator" content="pandoc" />
+        $for(author-meta)$
+        <meta name="author" content="$author-meta$" />
+        $endfor$
+        $if(date-meta)$
+        <meta name="date" content="$date-meta$" />
+        $endif$
+        <title>$if(pagetitle)$$pagetitle$$endif$</title>
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    </head>
+
+    <body>
+        $if(pagetitle)$
+        <h1>$pagetitle$</h1>
+        $endif$
+        $body$
+    </body>
+</html>
